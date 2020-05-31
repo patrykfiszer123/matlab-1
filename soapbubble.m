@@ -13,7 +13,11 @@
 % Uwaga: błonka ma dwie strony - jeżeli chcemy to uwzględnić to pierwszy
 % składnik (pole kwadratu) liczymy dwa razy, co daje 2 * t.^2 itd.
 
-% Definicja funkcji anonimowej.
+% Definicja funkcji f(t) obliczającej pole (wyrażone w jednostach a^2)
+% powierzchni błonki mydlanej. Użyliśmy funkcji anonimowej (w Matlab'ie),
+% bo jest to dość prosta zależność, nie chcieliśmy tworzyć dodatkowego pliku,
+% a nie mogliśmy użyć funkcji lokalnych (bo to niemożliwe w skryptach)
+% i nie chcieliśmy przekształcać skryptu w funkcję.
 %
 f = @(t) 2 * t.^2 + 2 * 2.^0.5 * (1-t) + 4 .* (1 + t) .* (1 + (1-t).^2).^0.5;
 
