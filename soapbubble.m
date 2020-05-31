@@ -23,7 +23,7 @@ f = @(t) 2 * t.^2 + 2 * 2.^0.5 * (1-t) + 4 .* (1 + t) .* (1 + (1-t).^2).^0.5;
 N = 1000;  % liczba punktów
 t = linspace(0, 1, N);  % wartości zmiennej niezależnej
 
-figure(1);      % Uwidocznienie okna w którym będzi rysowany wykres.
+figure(1);      % Uwidocznienie okna w którym będzie rysowany wykres.
 clf;            % Usunięcie całej poprzedniej zawartości (jeżeli była),
 plot(t, f(t));
 grid on;
