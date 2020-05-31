@@ -1,4 +1,4 @@
-% Szukanie minimum funkji jednej zmiennej.
+% Szukanie minimum funkcji jednej zmiennej.
 
 % Bańka mydlana rozpięta na drucianym szkielecie w kształcie krawędzi sześcianu
 % przyjmuje dość złożony kształt: wewnątrz bańki jest niewielki, kwadratowy,
@@ -23,17 +23,21 @@ f = @(t) 2 * t.^2 + 2 * 2.^0.5 * (1-t) + 4 .* (1 + t) .* (1 + (1-t).^2).^0.5;
 N = 1000;  % liczba punktów
 t = linspace(0, 1, N);  % wartości zmiennej niezależnej
 
-figure(1);      % Uwidocznienie okna w którym będzie rysowany wykres.
-clf;            % Usunięcie całej poprzedniej zawartości (jeżeli była),
-plot(t, f(t));
-grid on;
-grid minor;
-xlabel('t = x/a');
-ylabel('S/a^2');
+figure(1);          % Uwidocznienie okna w którym będzie rysowany wykres.
+clf;                % Usunięcie całej poprzedniej zawartości (jeżeli była).
+plot(t, f(t));      % Narysowanie wykresu funkcji.
+grid on;            % Włączenie siatki na wykresie ułatwiającej odczyt wartości.
+grid minor;         % Włączenie drobnej siatki na wykresie.
+xlabel('t = x/a');  % Opis dla osi odciętych.
+ylabel('S/a^2');    % Opis dla osi rzędnych.
 
-format long;
-tmin = fminbnd(f, 0, 1);
-fmin = f(tmin);
+% Obliczenia numeryczne.
 
-hold all;
-plot(tmin, fmin, 'or');
+format long;              % Włączenie pokazywania wszystkich cyfr wyników.
+tmin = fminbnd(f, 0, 1);  % Znalezienie minimum.
+fmin = f(tmin);           % Obliczenie wartości funkcji dla tmin.
+
+% Prezentacja wyników obliczeń.
+
+hold all;                % Wyłączenie wymazywania poprzedniego wykresu.
+plot(tmin, fmin, 'or');  % Dorysowanie wykresu złożonego z jednego punktu.
