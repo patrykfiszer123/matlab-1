@@ -9,7 +9,3 @@
 % Numer albumu ZUT: <<numer albumu>>
 %
 % Nazwa programu:   <<nazwa programu>>
-%
-% 2020 copyright <<imię i nazwisko (raz jeszcze)>>
-%
-% Tekst poniżej jest objęty licencją CC-BY-NC-SA.
