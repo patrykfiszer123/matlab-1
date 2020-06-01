@@ -7,5 +7,3 @@
 % Imię:             <<imię>>
 % Nazwisko:         <<nazwisko>>
 % Numer albumu ZUT: <<numer albumu>>
-%
-% Nazwa programu:   <<nazwa programu>>
