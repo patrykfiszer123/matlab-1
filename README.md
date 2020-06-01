@@ -1,3 +1,3 @@
 # matlab
 
-Materiały do zajęć, kod źródłowy, szablony.
+Materiały do zajęć, kod źródłowy, szablony...
